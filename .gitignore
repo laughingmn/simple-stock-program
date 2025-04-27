@@ -1,0 +1,51 @@
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.log
+*.pot
+*.pyc
+*.swp
+
+# Virtual environments
+venv/
+.env/
+.venv/
+*.env
+
+# Poetry virtual environment
+.poetry/
+
+# pytest cache
+.cache/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# MacOS Finder
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python bytecode files
+*.pyc
+
+# .env files to store environment variables (do not commit sensitive data)
+.env
+
+# Configuration and cache files for IDEs
+*.iml
