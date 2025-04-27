@@ -1,22 +1,6 @@
 import pytest
 
-from src.models.stock import CommonStock
-from src.services.stock_service import StockService
-from src.services.trade_service import TradeService
 from src.utils.trade_indicator import TradeIndicator
-
-
-@pytest.fixture
-def stock_service():
-    service = StockService()
-    service.add_stock(CommonStock(symbol="TEA", last_dividend=0, par_value=100))
-    service.add_stock(CommonStock(symbol="POP", last_dividend=8, par_value=100))
-    return service
-
-
-@pytest.fixture
-def trade_service(stock_service):
-    return TradeService(stock_service)
 
 
 def test_record_trade_success(trade_service):

@@ -32,9 +32,3 @@ class PreferredStock(Stock):
 
     def dividend_yield(self, price: float) -> float:
         return (self.fixed_dividend * self.par_value) / price
-
-
-@dataclass
-class NotPrefereed(Stock):
-    def dividend_yield(self, price: float):
-        print("Preferred")

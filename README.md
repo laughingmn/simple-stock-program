@@ -58,7 +58,7 @@ poetry run pytest
 
 To run a specific test or test file, use the following command:
 ```bash
-poetry run pytest path/to/test_file.py 
+poetry run pytest <path/to/test_file.py>
 ```
 
 

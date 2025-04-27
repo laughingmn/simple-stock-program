@@ -3,6 +3,9 @@ name = "simple-stock-program"
 version = "0.1.0"
 description = "A simple stock market program"
 readme = "README.md"
+authors = [
+    { name = "l", email = "sebastien@eustace.io" },
+]
 requires-python = ">=3.12"
 
 [tool.poetry.dependencies]

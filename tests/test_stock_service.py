@@ -1,16 +1,5 @@
 import pytest
 
-from src.models.stock import CommonStock, PreferredStock
-from src.services.stock_service import StockService
-
-
-@pytest.fixture
-def stock_service():
-    service = StockService()
-    service.add_stock(CommonStock(symbol="POP", last_dividend=8, par_value=100))
-    service.add_stock(PreferredStock(symbol="GIN", last_dividend=8, fixed_dividend=0.02, par_value=100))
-    return service
-
 
 def test_dividend_yield_common(stock_service):
     result = stock_service.dividend_yield("POP", price=120)

@@ -25,13 +25,12 @@ def main():
         trade_service.record_trade(symbol="POP", quantity=50, indicator=TradeIndicator.SELL, price=151)
         trade_service.record_trade(symbol="TEA", quantity=200, indicator=TradeIndicator.BUY, price=111)
         trade_service.record_trade(symbol="ALE", quantity=30, indicator=TradeIndicator.BUY, price=62)
-        trade_service.record_trade(symbol="JIN", quantity=30, indicator=TradeIndicator.BUY, price=62)
 
         # Dividend Yield
         dividend_yield_pop = stock_service.dividend_yield("POP", 120)
         print(f"Dividend Yield for 'POP': {round(dividend_yield_pop, 2)}")
         dividend_yield_pop = stock_service.dividend_yield("GIN", 100)
-        print(f"Dividend Yield for 'POP': {round(dividend_yield_pop, 2)}")
+        print(f"Dividend Yield for 'GIN': {round(dividend_yield_pop, 2)}")
         # PE Ratio
         pe_ratio_pop = stock_service.pe_ratio("POP", 120)
         print(f"P/E Ratio for 'POP': {round(pe_ratio_pop, 2)}")
